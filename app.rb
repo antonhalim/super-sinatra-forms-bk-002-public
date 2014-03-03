@@ -3,7 +3,7 @@ require 'sinatra/base'
 module SuperSinatra
   class App < Sinatra::Base
 
-    get '/' do
+    get '/teams/new' do
     end
 
   end

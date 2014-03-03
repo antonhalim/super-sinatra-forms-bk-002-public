@@ -1,4 +1,15 @@
-# Super Heroes!
+---
+tags: sinatra, forms
+langauges: ruby
+---
+
+# Superheroes!
+
+## Description
+
+In this lab, you'll practice building nested forms in Sinatra for creating teams of superheros. No database is required, but feel free to add persistence *after* you have successfully completed the instructions below.
+
+**Bonus**: Spec this out! Write tests as you complete the lab.
 
 ## Instructions
 
@@ -7,10 +18,10 @@
 
 ### Make a form
 
-1. Create a route that responds to a get request at `/`.
-2. Create a view and render it in the GET `/` route.
-3. The form should have fields for the name of a super-hero team and their motto.
-4. There should be form inputs for each super-hero member's name, power and bio.
+1. Create a route that responds to a GET request at `/teams/new`.
+2. Create a view and render it in the GET `/teams/new` route.
+3. The form should have fields for the `name` of a superhero team and their `motto`.
+4. There should be form inputs for each superhero member's `name`, `power`, and `bio`.
 
 It should look something like this:
 
@@ -18,14 +29,13 @@ It should look something like this:
 
 ### Handle form submission
 
-1. Create a route that respond to a GET request at `/team`
-2. Have the form send a GET request to this route.
-2. Render a template that displays the team data and each member's data.
+1. Create a route that responds to a POST request at `/teams`
+2. Have the form send a POST request to this route.
+2. Render a template that displays the submitted team data and each member's data.
 
 ## Final Output
 
-Your params should be nested, for example:
-  you would access the first super-hero's name as:
+Your params should be nested. For example, you would access the first super-hero's name as:
 
 ```ruby
 params["team"]["members"][0][name]
