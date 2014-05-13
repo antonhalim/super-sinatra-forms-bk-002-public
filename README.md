@@ -1,6 +1,6 @@
 ---
-tags: sinatra, forms
-langauges: ruby
+  tags: sinatra, forms
+  langauges: ruby
   resources: 4
 ---
 
@@ -47,6 +47,7 @@ When you post to this form you should render a page that displays the name of th
 Your view should display something like this:
 
 ![Imgur](http://i.imgur.com/SzO0phP.png?1)
+
 ## Resources
 * [HTML5 In Action](http://books.flatironschool.com/books/79) - [Forms and validation](http://books.flatironschool.com/books/79), page 35
 * [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Routes with Parameters](http://books.flatironschool.com/books/101), page 34
