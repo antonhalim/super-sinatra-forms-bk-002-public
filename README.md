@@ -1,6 +1,6 @@
 ---
-tags: sinatra, forms
-langauges: ruby
+  tags: sinatra, forms
+  langauges: ruby
   resources: 4
 ---
 
