@@ -17,7 +17,7 @@ describe App do
 
   describe 'POST /teams' do
     before do
-      post '/team', {
+      post '/teams', {
         :team => {
           :name => "Team Ruby",
           :motto => "We love Ruby!",
