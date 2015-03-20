@@ -1,7 +1,7 @@
 describe App do
 
   describe 'GET /' do
-    before do 
+    before do
       get '/'
     end
 
@@ -9,7 +9,7 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    it 'renders super hero form' do 
+    it 'renders super hero form' do
       expect(last_response.body).to include("Create a Team and Heroes!")
       expect(last_response.body).to include("<form")
     end
@@ -25,28 +25,28 @@ describe App do
             :super1 => {
               :name => "Amanda",
               :power => "Ruby",
-              :bio => "I love Ruby!"  
+              :bio => "I love Ruby!"
             },
             :super2 => {
               :name => "Arel",
               :power => "JavaScript",
-              :bio => "I love JavaScript!"  
+              :bio => "I love JavaScript!"
             },
             :super3 => {
               :name => "Katie",
               :power => "Sinatra",
-              :bio => "I love Sinatra!"  
+              :bio => "I love Sinatra!"
             }
           }
         }
       }
     end
 
-    it 'sends a 200 status code' do 
+    it 'sends a 200 status code' do
       expect(last_response.status).to eq(200)
     end
 
-    it 'displays the team info upon submission' do 
+    it 'displays the team info upon submission' do
       expect(last_response.body).to include("We love Ruby!")
     end
   end

@@ -1,3 +1,15 @@
-
-
-
+<html>
+	<head>
+		<title>Flatiron School</title>
+	</head>
+	<body>
+		<h1><%= @name %></h1>
+		<h3>Team Moto: <%= @motto %></h3>
+		<% @members.each do |super_number, attribute_hash| %>
+			<p>super_number</p>
+			<% attribute_hash.each do |k, v| %>
+				<li><%= k %> : <%= v %></li>
+			<% end %>
+		<% end %>
+	</body>
+</html>
